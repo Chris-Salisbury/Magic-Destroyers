@@ -1,7 +1,6 @@
 ﻿public class Leathervest
 {
-    public int damage;
-    public int healthPoints;
-    public string name;
+    private int armorPoints;
 
+    public int ArmorPoints { get; set; }
 }

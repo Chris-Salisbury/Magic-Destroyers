@@ -1,7 +1,6 @@
 ﻿public class Sword
 {
-    public int damage;
-    public int healthPoints;
-    public string name;
+    private int damage;
 
+    public int Damage { get; set; }
 }
