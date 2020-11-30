@@ -7,8 +7,8 @@
     private int healthPoints;
     private int level;
 
-    private Chainlink bodyArmor;
-    private Axe weapon;
+    private Leathervest bodyArmor;
+    private Staff weapon;
 
     public string Faction { get; set; }
     public string Name { get; set; }

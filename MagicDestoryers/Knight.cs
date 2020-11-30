@@ -8,7 +8,7 @@
     private int level;
 
     private Chainlink bodyArmor;
-    private Axe weapon;
+    private Hammer weapon;
 
     public string Faction { get; set; }
     public string Name { get; set; }
