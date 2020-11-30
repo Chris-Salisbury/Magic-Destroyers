@@ -19,4 +19,19 @@
 
     public Chainlink BodyArmor { get; set; }
     public Axe Weapon { get; set; }
+
+    public void ShadowRage()
+    {
+
+    }
+
+    public void VampiricTouch()
+    {
+
+    }
+
+    public void BoneShield()
+    {
+
+    }
 }

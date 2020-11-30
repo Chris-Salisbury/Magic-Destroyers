@@ -19,4 +19,19 @@
 
     public Chainlink BodyArmor { get; set; }
     public Axe Weapon { get; set; }
+
+    public void Moonfire()
+    {
+
+    }
+
+    public void Starburst()
+    {
+
+    }
+
+    public void OneWithNature()
+    {
+
+    }
 }

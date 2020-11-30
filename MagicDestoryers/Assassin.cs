@@ -19,4 +19,20 @@
 
     public Chainlink BodyArmor { get; set; }
     public Axe Weapon { get; set; }
+
+
+    public void Raze()
+    {
+
+    }
+
+    public void Bleed()
+    {
+
+    }
+
+    public void Survival()
+    {
+
+    }
 }
