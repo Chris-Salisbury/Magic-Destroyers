@@ -5,7 +5,20 @@ namespace MagicDestroyers.Weapons.Blunt
     {
         private int damage;
 
-        public int Damage { get; set; }
+        public int Damage
+        {
+            get
+            {
+                return damage;
+            }
+            set
+            {
+                if (value <= 0 && value >= 100)
+                {
+                    damage = value;
+                }
+            }
+        }
 
         public Staff()
         {

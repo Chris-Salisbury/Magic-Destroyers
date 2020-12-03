@@ -14,7 +14,10 @@ namespace MagicDestroyers.Armor.Cloth
 
             set
             {
-                armorPoints = value;
+                if (value >= 1 && value <= 100)
+                {
+                    armorPoints = value;
+                }
             }
         }
 

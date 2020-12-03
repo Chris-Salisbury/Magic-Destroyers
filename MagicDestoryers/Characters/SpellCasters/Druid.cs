@@ -4,6 +4,7 @@ namespace MagicDestroyers.Characters.SpellCasters
 {
     using MagicDestroyers.Armor.Leather;
     using MagicDestroyers.Weapons.Blunt;
+    using System;
 
     public class Druid
     {
@@ -26,7 +27,14 @@ namespace MagicDestroyers.Characters.SpellCasters
 
             set
             {
-                faction = value;
+                if (value == "Melee" || value == "Spellcaster")
+                {
+                    faction = value;
+                }
+                else
+                {
+                    Console.WriteLine("inappropriate faction! Should be \"Melee\" or \"Spellcaster\"");
+                }
             }
         }
         public string Name
@@ -38,7 +46,14 @@ namespace MagicDestroyers.Characters.SpellCasters
 
             set
             {
-                name = value;
+                if (value.Length >= 2 && value.Length <= 10)
+                {
+                    name = value;
+                }
+                else
+                {
+                    Console.WriteLine("The name is too short or too long. Must be between 2 and 10 characters!");
+                }
             }
         }
 
@@ -51,7 +66,14 @@ namespace MagicDestroyers.Characters.SpellCasters
 
             set
             {
-                abilityPoints = value;
+                if (value >= 0 && value <= 10)
+                {
+                    abilityPoints = value;
+                }
+                else
+                {
+                    Console.WriteLine("Inappropriate value! Ability points should be between 0 and 10!");
+                }
             }
         }
         public int HealthPoints
@@ -63,7 +85,14 @@ namespace MagicDestroyers.Characters.SpellCasters
 
             set
             {
-                healthPoints = value;
+                if (value >= 1 && value <= 100)
+                {
+                    HealthPoints = value;
+                }
+                else
+                {
+                    Console.WriteLine("Inappropriate value! Health points should be between 1 and 100!");
+                }
             }
         }
         public int Level
@@ -75,7 +104,14 @@ namespace MagicDestroyers.Characters.SpellCasters
 
             set
             {
-                level = value;
+                if (value >= 1 && value <= 10)
+                {
+                    level = value;
+                }
+                else
+                {
+                    Console.WriteLine("Inappropriate value! Level points should be between 1 and 10!");
+                }
             }
         }
 

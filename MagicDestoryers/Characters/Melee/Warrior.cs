@@ -1,9 +1,9 @@
 ﻿
-
 namespace MagicDestroyers.Characters.Melee
 {
     using MagicDestroyers.Armor.Mail;
     using MagicDestroyers.Weapons.Sharp;
+    using System;
 
     public class Warrior
     {
@@ -26,7 +26,14 @@ namespace MagicDestroyers.Characters.Melee
 
             set
             {
-                faction = value;
+                if (value == "Melee" || value == "Spellcaster")
+                {
+                    faction = value;
+                }
+                else
+                {
+                    Console.WriteLine("inappropriate faction! Should be \"Melee\" or \"Spellcaster\"");
+                }
             }
         }
         public string Name
@@ -38,7 +45,14 @@ namespace MagicDestroyers.Characters.Melee
 
             set
             {
-                name = value;
+                if (value.Length >= 2 && value.Length <= 10)
+                {
+                    name = value;
+                }
+                else
+                {
+                    Console.WriteLine("The name is too short or too long. Must be between 2 and 10 characters!");
+                }
             }
         }
 
@@ -51,7 +65,14 @@ namespace MagicDestroyers.Characters.Melee
 
             set
             {
-                abilityPoints = value;
+                if (value >= 0 && value <= 10)
+                {
+                    abilityPoints = value;
+                }
+                else
+                {
+                    Console.WriteLine("Inappropriate value! Ability points should be between 0 and 10!");
+                }
             }
         }
         public int HealthPoints
@@ -63,7 +84,14 @@ namespace MagicDestroyers.Characters.Melee
 
             set
             {
-                healthPoints = value;
+                if (value >= 1 && value <= 100)
+                {
+                    HealthPoints = value;
+                }
+                else
+                {
+                    Console.WriteLine("Inappropriate value! Health points should be between 1 and 100!");
+                }
             }
         }
         public int Level
@@ -75,7 +103,14 @@ namespace MagicDestroyers.Characters.Melee
 
             set
             {
-                level = value;
+                if (value >= 1 && value <= 10)
+                {
+                    level = value;
+                }
+                else
+                {
+                    Console.WriteLine("Inappropriate value! Level points should be between 1 and 10!");
+                }
             }
         }
 
