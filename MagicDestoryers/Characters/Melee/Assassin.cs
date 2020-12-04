@@ -34,6 +34,7 @@ namespace MagicDestroyers.Characters.Melee
                 }
                 else
                 {
+                    faction = "Melee";
                     Console.WriteLine("inappropriate faction! Should be \"Melee\" or \"Spellcaster\"");
                 }
             }
@@ -53,6 +54,7 @@ namespace MagicDestroyers.Characters.Melee
                 }
                 else
                 {
+                    name = "Fred";
                     Console.WriteLine("The name is too short or too long. Must be between 2 and 10 characters!");
                 }
             }
@@ -73,6 +75,7 @@ namespace MagicDestroyers.Characters.Melee
                 }
                 else
                 {
+                    abilityPoints = 0;
                     Console.WriteLine("Inappropriate value! Ability points should be between 0 and 10!");
                 }
             }
@@ -86,12 +89,13 @@ namespace MagicDestroyers.Characters.Melee
 
             set
             {
-                if (value >= 1 || value <= 100)
+                if (value >= 1 && value <= 100)
                 {
-                    HealthPoints = value;
+                    healthPoints = value;
                 }
                 else
                 {
+                    healthPoints = 0;
                     Console.WriteLine("Inappropriate value! Health points should be between 1 and 100!");
                 }
             }
@@ -105,7 +109,15 @@ namespace MagicDestroyers.Characters.Melee
 
             set
             {
-                level = value;
+                if (value >= 1 && value <= 10)
+                {
+                    level = value;
+                }
+                else
+                {
+                    level = 1;
+                    Console.WriteLine("Inappropriate value! Level points should be between 1 and 10!");
+                }
             }
         }
 
@@ -136,22 +148,22 @@ namespace MagicDestroyers.Characters.Melee
 
         public Assassin()
         {
-
+            
         }
 
         public void Raze()
         {
-
+            throw new NotImplementedException();
         }
 
         public void Bleed()
         {
-
+            throw new NotImplementedException();
         }
 
         public void Survival()
         {
-
+            throw new NotImplementedException();
         }
     }
 }

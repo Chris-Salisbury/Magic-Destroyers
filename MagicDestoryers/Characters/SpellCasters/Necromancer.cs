@@ -32,6 +32,7 @@
                 }
                 else
                 {
+                    faction = "Spellcaster";
                     Console.WriteLine("inappropriate faction! Should be \"Melee\" or \"Spellcaster\"");
                 }
             }
@@ -51,6 +52,7 @@
                 }
                 else
                 {
+                    name = "Necky"
                     Console.WriteLine("The name is too short or too long. Must be between 2 and 10 characters!");
                 }
             }
@@ -71,6 +73,7 @@
                 }
                 else
                 {
+                    abilityPoints = 0;
                     Console.WriteLine("Inappropriate value! Ability points should be between 0 and 10!");
                 }
             }
@@ -86,10 +89,11 @@
             {
                 if (value >= 1 && value <= 100)
                 {
-                    HealthPoints = value;
+                    healthPoints = value;
                 }
                 else
                 {
+                    healthPoints = 0;
                     Console.WriteLine("Inappropriate value! Health points should be between 1 and 100!");
                 }
             }
@@ -109,6 +113,7 @@
                 }
                 else
                 {
+                    level = 1;
                     Console.WriteLine("Inappropriate value! Level points should be between 1 and 10!");
                 }
             }
@@ -139,22 +144,22 @@
 
         public Necromancer()
         {
-
+            
         }
 
         public void ShadowRage()
         {
-
+            throw new NotImplementedException();
         }
 
         public void VampiricTouch()
         {
-
+            throw new NotImplementedException();
         }
 
         public void BoneShield()
         {
-
+            throw new NotImplementedException();
         }
     }
 }

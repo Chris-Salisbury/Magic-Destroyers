@@ -1,6 +1,8 @@
 ﻿
 namespace MagicDestroyers.Armor.Cloth
 {
+    using System;
+
     public class ClothRobe
     {
         private int armorPoints;
@@ -23,7 +25,7 @@ namespace MagicDestroyers.Armor.Cloth
 
         public ClothRobe()
         {
-
+            throw new NotImplementedException();
         }
     }
 

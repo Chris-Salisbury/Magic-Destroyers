@@ -33,6 +33,7 @@ namespace MagicDestroyers.Characters.Melee
                 }
                 else
                 {
+                    faction = "Melee";
                     Console.WriteLine("inappropriate faction! Should be \"Melee\" or \"Spellcaster\"");
                 }
             }
@@ -52,6 +53,7 @@ namespace MagicDestroyers.Characters.Melee
                 }
                 else
                 {
+                    name = "James";
                     Console.WriteLine("The name is too short or too long. Must be between 2 and 10 characters!");
                 }
             }
@@ -72,6 +74,7 @@ namespace MagicDestroyers.Characters.Melee
                 }
                 else
                 {
+                    abilityPoints = 0;
                     Console.WriteLine("Inappropriate value! Ability points should be between 0 and 10!");
                 }
             }
@@ -87,10 +90,11 @@ namespace MagicDestroyers.Characters.Melee
             {
                 if (value >= 1 && value <= 100)
                 {
-                    HealthPoints = value;
+                    healthPoints = value;
                 }
                 else
                 {
+                    healthPoints = 0;
                     Console.WriteLine("Inappropriate value! Health points should be between 1 and 100!");
                 }
             }
@@ -110,6 +114,7 @@ namespace MagicDestroyers.Characters.Melee
                 }
                 else
                 {
+                    level = 1;
                     Console.WriteLine("Inappropriate value! Level points should be between 1 and 10!");
                 }
             }
@@ -142,22 +147,22 @@ namespace MagicDestroyers.Characters.Melee
 
         public Knight()
         {
-
+            
         }
 
         public void HolyBlow()
         {
-
+            throw new NotImplementedException();
         }
 
         public void PurifySoul()
         {
-
+            throw new NotImplementedException();
         }
 
         public void RighteousWings()
         {
-
+            throw new NotImplementedException();
         }
     }
 }

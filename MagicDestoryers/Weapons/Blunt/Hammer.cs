@@ -1,6 +1,8 @@
 ﻿
 namespace MagicDestroyers.Weapons.Blunt
 {
+    using System;
+
     public class Hammer
     {
         private int damage;
@@ -22,12 +24,12 @@ namespace MagicDestroyers.Weapons.Blunt
 
         public Hammer()
         {
-
+            
         }
 
         public void Stun()
         {
-
+            throw new NotImplementedException();
         }
     }
 

@@ -33,6 +33,7 @@ namespace MagicDestroyers.Characters.SpellCasters
                 }
                 else
                 {
+                    faction = "Spellcaster";
                     Console.WriteLine("inappropriate faction! Should be \"Melee\" or \"Spellcaster\"");
                 }
             }
@@ -52,6 +53,7 @@ namespace MagicDestroyers.Characters.SpellCasters
                 }
                 else
                 {
+                    name = "Bob";
                     Console.WriteLine("The name is too short or too long. Must be between 2 and 10 characters!");
                 }
             }
@@ -72,6 +74,7 @@ namespace MagicDestroyers.Characters.SpellCasters
                 }
                 else
                 {
+                    abilityPoints = 0;
                     Console.WriteLine("Inappropriate value! Ability points should be between 0 and 10!");
                 }
             }
@@ -87,10 +90,11 @@ namespace MagicDestroyers.Characters.SpellCasters
             {
                 if (value >= 1 && value <= 100)
                 {
-                    HealthPoints = value;
+                    healthPoints = value;
                 }
                 else
                 {
+                    healthPoints = 0; 
                     Console.WriteLine("Inappropriate value! Health points should be between 1 and 100!");
                 }
             }
@@ -110,6 +114,7 @@ namespace MagicDestroyers.Characters.SpellCasters
                 }
                 else
                 {
+                    level = 1;
                     Console.WriteLine("Inappropriate value! Level points should be between 1 and 10!");
                 }
             }
@@ -140,22 +145,22 @@ namespace MagicDestroyers.Characters.SpellCasters
 
         public Mage()
         {
-
+            
         }
 
         public void ArcaneWrath()
         {
-
+            throw new NotImplementedException();
         }
 
         public void Firewall()
         {
-
+            throw new NotImplementedException();
         }
 
         public void Meditation()
         {
-
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿
 namespace MagicDestroyers.Armor.Leather
 {
+    using System;
     public class Leathervest
     {
         private int armorPoints;
@@ -23,7 +24,7 @@ namespace MagicDestroyers.Armor.Leather
 
         public Leathervest()
         {
-
+            throw new NotImplementedException();
         }
     }
 

@@ -1,6 +1,8 @@
 ﻿
 namespace MagicDestroyers.Weapons.Blunt
 {
+    using System;
+
     public class Staff
     {
         private int damage;
@@ -22,12 +24,12 @@ namespace MagicDestroyers.Weapons.Blunt
 
         public Staff()
         {
-
+            
         }
 
         public void Empower()
         {
-
+            throw new NotImplementedException();
         }
     }
 

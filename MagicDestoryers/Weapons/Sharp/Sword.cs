@@ -1,6 +1,10 @@
 ﻿
+
+
 namespace MagicDestroyers.Weapons.Sharp
 {
+    using System;
+
     public class Sword
     {
         private int damage;
@@ -22,12 +26,12 @@ namespace MagicDestroyers.Weapons.Sharp
 
         public Sword()
         {
-
+            
         }
 
         public void Bloodthirst()
         {
-
+            throw new NotImplementedException();
         }
     }
 

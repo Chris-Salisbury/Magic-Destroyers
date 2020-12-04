@@ -1,6 +1,8 @@
 ﻿
 namespace MagicDestroyers.Armor.Mail
 {
+    using System;
+
     public class Chainlink
     {
         private int armorPoints;
@@ -23,7 +25,7 @@ namespace MagicDestroyers.Armor.Mail
 
         public Chainlink()
         {
-
+            throw new NotImplementedException();
         }
     }
 

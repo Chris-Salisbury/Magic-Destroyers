@@ -1,6 +1,8 @@
 ﻿
 namespace MagicDestroyers.Weapons.Sharp
 {
+    using System;
+
     public class Axe
     {
         private int damage;
@@ -22,12 +24,12 @@ namespace MagicDestroyers.Weapons.Sharp
 
         public Axe()
         {
-
+            
         }
 
         public void HackNSlash()
         {
-
+            throw new NotImplementedException();
         }
     }
 
