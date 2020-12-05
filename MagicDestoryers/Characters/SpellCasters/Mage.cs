@@ -103,18 +103,18 @@ namespace MagicDestroyers.Characters.SpellCasters
         {
             get
             {
-                return level;
+                return this.level;
             }
 
             set
             {
                 if (value >= 1 && value <= 10)
                 {
-                    level = value;
+                    this.level = value;
                 }
                 else
                 {
-                    level = 1;
+                    this.level = 1;
                     Console.WriteLine("Inappropriate value! Level points should be between 1 and 10!");
                 }
             }
