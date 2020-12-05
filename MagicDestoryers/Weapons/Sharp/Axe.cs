@@ -11,13 +11,13 @@ namespace MagicDestroyers.Weapons.Sharp
         {
             get
             {
-                return damage;
+                return this.damage;
             }
             set
             {
                 if (value <= 0 && value >= 100)
                 {
-                    damage = value;
+                    this.damage = value;
                 }
             }
         }

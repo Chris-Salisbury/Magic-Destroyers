@@ -11,14 +11,14 @@ namespace MagicDestroyers.Armor.Cloth
         {
             get
             {
-                return ArmorPoints;
+                return this.armorPoints;
             }
 
             set
             {
                 if (value >= 1 && value <= 100)
                 {
-                    armorPoints = value;
+                    this.armorPoints = value;
                 }
             }
         }
