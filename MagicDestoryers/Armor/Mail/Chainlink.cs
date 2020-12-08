@@ -25,7 +25,7 @@ namespace MagicDestroyers.Armor.Mail
 
         public Chainlink()
         {
-            throw new NotImplementedException();
+            this.ArmorPoints = 10;
         }
     }
 

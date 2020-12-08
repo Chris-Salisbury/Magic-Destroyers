@@ -25,7 +25,7 @@ namespace MagicDestroyers.Armor.Cloth
 
         public ClothRobe()
         {
-            throw new NotImplementedException();
+            this.ArmorPoints = 10;
         }
     }
 

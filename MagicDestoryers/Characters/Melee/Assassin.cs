@@ -146,9 +146,15 @@ namespace MagicDestroyers.Characters.Melee
             }
         }
 
-        public Assassin()
+        public Assassin(string name, int level, int abilityPoints)
         {
-            
+            this.Name = name;
+            this.Level = level;
+            this.HealthPoints = 100;
+            this.Faction = "Melee";
+            this.AbilityPoints = abilityPoints;
+            this.BodyArmor = new Leathervest();
+            this.weapon = new Sword();
         }
 
         public void Raze()

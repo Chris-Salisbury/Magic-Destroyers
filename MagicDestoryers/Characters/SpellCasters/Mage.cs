@@ -143,9 +143,37 @@ namespace MagicDestroyers.Characters.SpellCasters
             }
         }
 
+
         public Mage()
         {
-            
+            this.Name = "Fred";
+            this.Level = 1;
+            this.HealthPoints = 100;
+            this.Faction = "Spellcasters";
+            this.AbilityPoints = 10;
+            this.BodyArmor = new ClothRobe();
+            this.weapon = new Staff();
+        }
+
+        public Mage(string name, int level)
+        {
+            this.Name = name;
+            this.Level = level;
+            this.AbilityPoints = 10;
+            this.HealthPoints = 100;
+            this.Faction = "Spellcasters";
+            this.BodyArmor = new ClothRobe();
+            this.weapon = new Staff();
+        }
+        public Mage(string name, int level, int abiltyPoints)
+        {
+            this.Name = name;
+            this.Level = level;
+            this.AbilityPoints = abilityPoints;
+            this.HealthPoints = 100;
+            this.Faction = "Spellcasters";
+            this.BodyArmor = new ClothRobe();
+            this.weapon = new Staff();
         }
 
         public void ArcaneWrath()

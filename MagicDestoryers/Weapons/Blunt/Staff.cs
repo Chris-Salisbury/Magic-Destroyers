@@ -29,7 +29,7 @@ namespace MagicDestroyers.Weapons.Blunt
 
         public void Empower()
         {
-            throw new NotImplementedException();
+            this.Damage = 10;
         }
     }
 

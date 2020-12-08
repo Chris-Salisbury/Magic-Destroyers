@@ -144,7 +144,35 @@
 
         public Necromancer()
         {
-            
+            this.Name = "barry";
+            this.Level = 1;
+            this.HealthPoints = 100;
+            this.Faction = "Spellcasters";
+            this.AbilityPoints = 10;
+            this.BodyArmor = new Leathervest();
+            this.weapon = new Sword();
+        }
+
+        public Necromancer(string name, int level)
+        {
+            this.Name = name;
+            this.Level = level;
+            this.HealthPoints = 100;
+            this.Faction = "Spellcasters";
+            this.AbilityPoints = abilityPoints;
+            this.BodyArmor = new Leathervest();
+            this.weapon = new Sword();
+        }
+
+        public Necromancer(string name, int level, int abilityPoints)
+        {
+            this.Name = name;
+            this.Level = level;
+            this.HealthPoints = 100;
+            this.Faction = "Spellcasters";
+            this.AbilityPoints = abilityPoints;
+            this.BodyArmor = new Leathervest();
+            this.weapon = new Sword();
         }
 
         public void ShadowRage()

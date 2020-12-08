@@ -147,7 +147,35 @@ namespace MagicDestroyers.Characters.SpellCasters
 
         public Druid()
         {
-            
+            this.Name = "Yougurt";
+            this.Level = 1;
+            this.HealthPoints = 10;
+            this.Faction = "Spellcasters";
+            this.AbilityPoints = 10;
+            this.BodyArmor = new Leathervest();
+            this.weapon = new Staff();
+        }
+
+        public Druid(string name, int level)
+        {
+            this.Name = name;
+            this.Level = level;
+            this.HealthPoints = 10;
+            this.Faction = "Spellcasters";
+            this.AbilityPoints = 10;
+            this.BodyArmor = new Leathervest();
+            this.weapon = new Staff();
+        }
+
+        public Druid(string name, int level, int abilityPoints)
+        {
+            this.Name = name;
+            this.Level = level;
+            this.HealthPoints = 10;
+            this.Faction = "Spellcasters";
+            this.AbilityPoints = abilityPoints;
+            this.BodyArmor = new Leathervest();
+            this.weapon = new Staff();
         }
 
         public void Moonfire()

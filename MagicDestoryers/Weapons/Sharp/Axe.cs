@@ -29,7 +29,7 @@ namespace MagicDestroyers.Weapons.Sharp
 
         public void HackNSlash()
         {
-            throw new NotImplementedException();
+            this.Damage = 10;
         }
     }
 

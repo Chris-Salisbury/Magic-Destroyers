@@ -31,7 +31,7 @@ namespace MagicDestroyers.Weapons.Sharp
 
         public void Bloodthirst()
         {
-            throw new NotImplementedException();
+            this.Damage = 10;
         }
     }
 

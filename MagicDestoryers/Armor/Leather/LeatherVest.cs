@@ -24,7 +24,7 @@ namespace MagicDestroyers.Armor.Leather
 
         public Leathervest()
         {
-            throw new NotImplementedException();
+            this.ArmorPoints = 10;
         }
     }
 
